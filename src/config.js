@@ -1,4 +1,4 @@
-export const PORT = 3000;
+export const PORT = process.env.PORT || 3000
 
 // configuracion DB
 export const DB_HOST = process.env.DB_HOST | 'localhost'

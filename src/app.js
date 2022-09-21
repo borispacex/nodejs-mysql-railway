@@ -19,7 +19,7 @@ app.get('/create', async (req, res) => {
 });
 
 app.get('/users', async (req, res) => {
-    const [rows] = await pool.query(`SELECT * FROM users`);
+    const [rows] = await pool.query('SELECT * FROM users');
     res.json(rows);
 });
 

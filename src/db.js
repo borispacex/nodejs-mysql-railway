@@ -7,7 +7,6 @@ import {
   DB_PORT
 } from './config.js'
 
-// tambien podriamos usar createConnection
 export const pool = createPool({
   user: DB_USER,
   password: DB_PASSWORD,
@@ -15,3 +14,5 @@ export const pool = createPool({
   port: DB_PORT,
   database: DB_NAME
 })
+
+// tambien podriamos usar createConnection
